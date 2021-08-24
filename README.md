@@ -32,7 +32,7 @@ The initial source was a file repostiory containg the a folder with html page, c
 ## Usage
 
 1. To contribute to this page, please follow steps on [contributing](CONTRIBUTING.md)
-2. To generate a password, click on ![Generate Password](PasswordGenerator1.jpg)
+2. To generate a password, click on ![Generate Password](PasswordGenerator1.jpg){:height="400px" width="400px"}
 3. Fullfill the questions on password 
   - length 
   - use of uppercase characters
