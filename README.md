@@ -31,7 +31,15 @@ The initial source was a file repostiory containg the a folder with html page, c
 
 ## Usage
 
-To contribute to this page, please follow steps on [contributing](CONTRIBUTING.md)
+1. To contribute to this page, please follow steps on [contributing](CONTRIBUTING.md)
+2. To generate a password, click on ![Generate Password](PasswordGenerator1.jpg)
+3. Fullfill the questions on password 
+  - length 
+  - use of uppercase characters
+  - use of lowercase characters
+  - use of numeric characters
+  - use of special characters 
+![Generated Password](PasswordGenerator2.jpg)
 
 ## Credits
 
