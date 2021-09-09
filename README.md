@@ -2,6 +2,13 @@
 
 ## Javascript to generate password
 
+This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
+
+* [Deployment link page](https://kumarakom.github.io/password-generator/)
+* [GitHub Repository](https://github.com/kumarakom/password-generator)
+
+With this project I've understood the below:
+
 - Understand use of javascript 
 - Understand DOM in javascript 
 - Click button to generate password based on user input

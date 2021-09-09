@@ -4,6 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  // console.log("this is line 7" + password);
   var passwordText = document.querySelector("#password");
   
   // Don't publish undefined on the page if acceptance criteria is not met
@@ -18,14 +19,14 @@ generateBtn.addEventListener("click", writePassword);
 function repeatProg () {
   var repeatProg = confirm("Do you want to continue ?");
   if (repeatProg) {
-     generatePassword () ;
+     writePassword();
   } return;
 }
 
 // Start of generatePassword function
 function generatePassword () {
-
-  // PART 1: Request user input for number of characters for password
+  var password = "";
+  // PART 1: Request usevar password = "";r input for number of characters for password
   var userLenghtOfPassword = prompt("Please enter the number of characters you want for your password. It must be a number between 8 and 128.");
 
   // Check if
@@ -35,10 +36,12 @@ function generatePassword () {
       if (isNaN(userLenghtOfPassword)) {
           alert("Error, expecting a number...!!!");
           return repeatProg ();
+          // return;
 
       } else if (userLenghtOfPassword < 8 || userLenghtOfPassword > 128) {
           alert("Error, must chose between 8 and 128...!!!");
           return repeatProg ();
+          // return;
       } ;
 
   // --> End PART 1
@@ -63,20 +66,20 @@ function generatePassword () {
     // If none the password types are called, then do not proceed
     if (!charAllowed) {
       alert("Error, expecting atleast one the password type...!!!");
-      var goToEnd = 0 ;
+      return ; 
     }
   // --> End PART 2
 
   // Now randomly select a character from the array
-  if (goToEnd != 0) {
-      var password = "";
+      
       for (var z = 0 ; z < userLenghtOfPassword; z ++) {
         var randomNumber = Math.floor(Math.random() * charAllowed.length);
         // Found an interesting way to use substing to get it done
         // Format: string.substring(start, end)
         password += charAllowed.substring(randomNumber, randomNumber + 1);
+        console.log("Line 87 " + password);
       }
-  }
+  
 
   return password; // return the generated password
 
